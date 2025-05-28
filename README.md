@@ -1,32 +1,35 @@
-# Time Series Forecasting of Energy Consumption 🔋📈
+# Time Series Forecasting of Energy Consumption 
 
-## 📊 Project Description
+##  Project Description
 This project uses hourly electricity consumption data from the PJM Energy Market to forecast future energy demand using time series modeling.
 
-## 🛠 Tools Used
+##  Tools Used
 - Python
-- Pandas, Numpy
+- Pandas, NumPy
 - Statsmodels (SARIMA)
 - Matplotlib, Seaborn
-- Google Colab
+- Google Colab / Jupyter Notebook
 
-## 📁 Dataset
+##  Dataset
 - Source: [PJM Hourly Energy Consumption](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption)
+- Data contains hourly electricity usage in megawatts from 2002 to 2018.
+- Resampled hourly data to daily averages for smoother trends.
 
-## ⚙️ Process Overview
-1. **Data Preprocessing**: Resampled hourly data into daily means.
-2. **EDA**: Visualized trends, seasonality, and stationarity.
-3. **Modeling**: Applied SARIMA to capture seasonality and trend.
-4. **Evaluation**: Used MAE and MAPE for accuracy on a 30-day forecast.
+##  Process Overview
+1. **Data Preprocessing**: Resampled hourly data into daily means; handled missing data.
+2. **Exploratory Data Analysis (EDA)**: Visualized trends, seasonality, and patterns.
+3. **Modeling**: Built a SARIMA model to capture trend and seasonality in the time series.
+4. **Evaluation**: Forecasted the next 30 days and evaluated using MAE and MAPE metrics.
 
-## 📉 Results
-- **MAPE**: ~2.6%
-- **MAE**: ~503
-- The model forecasted daily energy demand with high accuracy.
+##  Results
+- **Mean Absolute Error (MAE):** _e.g., 503_
+- **Mean Absolute Percentage Error (MAPE):** _e.g., 2.6%_
+- The SARIMA model successfully forecasted daily energy demand with high accuracy.
 
-## 💡 Business Impact
-This model helps in energy planning and demand management, reducing costs and ensuring grid reliability.
+##  Business Impact
+This forecasting model can help energy providers optimize resource planning, reduce costs, and avoid outages by anticipating demand fluctuations.
 
-## 📎 Notebook
-Check out the Colab notebook [here](pjme_energy_forecasting.ipynb).
-
+##  How to Run
+- Clone the repository:
+  ```bash
+  git clone https://github.com/yourusername/energy-forecasting.git
